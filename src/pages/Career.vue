@@ -3,15 +3,15 @@
     <Pagetitle pagetitle='Career'></Pagetitle>
     <table>
       <thead>
-        <tr v-for="list in thead">
-          <td v-for="item in list">
+        <tr v-for="(list, index) in thead" :key="index">
+          <td v-for="(item, index) in list" :key="index">
             {{item}}
           </td>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="list in tbody">
-          <td v-for="item in list">
+        <tr v-for="(list, index) in tbody" :key="index">
+          <td v-for="(item, index) in list" :key="index">
             {{item}}
           </td>
         </tr>

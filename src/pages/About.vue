@@ -3,8 +3,8 @@
     <Pagetitle pagetitle="About"></Pagetitle>
     <table>
       <tbody>
-        <tr v-for="line in table">
-          <td v-for="(item) in line">
+        <tr v-for="(line, index) in table" :key="index">
+          <td v-for="(item, index) in line" :key="index">
             <p v-if="item.indexOf('<a') !== -1">
               <a v-html="item"></a>
             </p>
