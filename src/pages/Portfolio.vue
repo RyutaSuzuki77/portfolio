@@ -1,5 +1,16 @@
 <template>
   <div class="portfolio">
-    <h1>portfolio page</h1>
+    <Pagetitle pagetitle="Portfolio"></Pagetitle>
   </div>
 </template>
+
+<script>
+import Pagetitle from '@/components/Pagetitle.vue'
+
+export default{
+  name:'pagetitle',
+  components:{
+    Pagetitle
+  }
+}
+</script>
