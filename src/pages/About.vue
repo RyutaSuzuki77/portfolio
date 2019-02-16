@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Pagetitle pagetitle="About"></Pagetitle>
   </div>
 </template>
+
+<script>
+import Pagetitle from '@/components/Pagetitle.vue'
+
+export default{
+  name:'about',
+  components:{
+    Pagetitle
+  }
+}
+</script>
