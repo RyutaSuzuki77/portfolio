@@ -1,6 +1,6 @@
 <template>
   <div class="carerr">
-    <Pagetitle pagetitle='Carerr'></Pagetitle>
+    <Pagetitle pagetitle='Career'></Pagetitle>
   </div>
 </template>
 
