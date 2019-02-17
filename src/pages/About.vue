@@ -5,9 +5,9 @@
       <tbody>
         <tr v-for="(line, index) in table" :key="index">
           <td v-for="(item, index) in line" :key="index">
-            <p v-if="item.indexOf('<a') !== -1">
-              <a v-html="item"></a>
-            </p>
+            <div v-if="item.indexOf('<a') !== -1">
+              <p v-html="item"></p>
+            </div>
             <p v-else>
               {{item}}
             </p>
