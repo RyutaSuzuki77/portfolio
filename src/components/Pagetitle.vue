@@ -1,6 +1,6 @@
 <template>
   <div class="pagetitle">
-    <h1> {{pagetitle}} </h1>
+    <p> {{pagetitle}} </p>
   </div>
 </template>
 
@@ -15,3 +15,12 @@ export default{
   }
 }
 </script>
+
+<style lang="scss">
+.pagetitle p{
+  text-align: center;
+  margin:0px;
+  font-size:50px;
+
+}
+</style>

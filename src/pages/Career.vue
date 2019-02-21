@@ -1,17 +1,17 @@
 <template>
-  <div class="carerr">
+  <div class="career">
     <Pagetitle pagetitle='Career'></Pagetitle>
-    <table>
+    <table class="career_table">
       <thead>
         <tr v-for="(list, index) in thead" :key="index">
-          <td v-for="(item, index) in list" :key="index">
+          <td id="thead_item" v-for="(item, index) in list" :key="index">
             {{item}}
           </td>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(list, index) in tbody" :key="index">
-          <td v-for="(item, index) in list" :key="index">
+          <td id="tbody_item" v-for="(item, index) in list" :key="index">
             {{item}}
           </td>
         </tr>
@@ -48,3 +48,28 @@ export default{
   }
 }
 </script>
+
+<style lang="scss">
+.career{
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+  width: 100vw;
+  height: 100vh;
+}
+.career_table{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.career_table #thead_item, #tbody_item{
+  border: solid 1px;
+  background: #ffff;
+}
+.career_table #thead_item{
+  text-align: center;
+}
+.career_table #tbody_item{
+  padding-left: 5px;
+}
+</style>
