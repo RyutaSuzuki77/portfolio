@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <Pagetitle pagetitle='Top'></Pagetitle>
-    Doragon's Portfolio
+    <p id="text">Doragon's Portfolio</p>
   </div>
 </template>
 
@@ -15,3 +15,18 @@ export default{
   }
 }
 </script>
+
+<style lang="scss">
+.top{
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#text{
+  font-size:100px;
+  padding:50px;
+  text-align: center;
+}
+</style>
