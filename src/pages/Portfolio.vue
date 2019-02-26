@@ -2,7 +2,7 @@
   <div class="portfolio">
     <Pagetitle pagetitle="Portfolio"></Pagetitle>
     <div class="box">
-      <button onclick="window.open('https://twitter.com/dragonnn16?lang=ja')">
+      <button onclick="window.open('https://ryutasuzuki77.github.io/portfolio/')">
         <img src="@/assets/Portfolio1.png">
         <p>ポートフォリオ</p>
         <p>Vue.js+VueRouter</p>
