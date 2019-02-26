@@ -24,4 +24,10 @@
 .header a:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width:479px){
+  .header a{
+    color: #ffff;
+  }
+}
 </style>
